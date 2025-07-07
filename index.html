@@ -1,18 +1,50 @@
-<!DOCTYPE html>
-<html lang="pt-Br">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Jean</title>
-  <link rel="stylesheet" href="style/main.css">
+  <title>JEAN 1.0</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="terminal">
-    <div class="line">Inicializando Sistema Jean v1.0...</div>
-    <div class="line">Emoções carregando...</div>
-    <div class="line">Amor detectado...</div>
+  <div id="terminal-container">
+    <div id="terminal"></div><span class="cursor"></span>
+    <button id="enter-btn" onclick="enterSystem()">Entrar no sistema</button>
   </div>
 
-  <script src="js/animations.js"></script>
+  <section id="next-section" class="futuristic-section">
+    <h2 class="glow-text">Núcleo Emocional Ativo</h2>
+    <p class="typing-text"></p>
+    <div class="status-panel">
+      <pre>
+Status do sistema:
+- Amor: 100%
+- Paixão: 100%
+- Confiança: 100%
+- Saudade: 100%
+- Conexão: Estável
+      </pre>
+    </div>
+    <button class="neon-button" onclick="goToMusicSection()">Explorar Memórias</button>
+  </section>
+
+  <section id="music-section" class="futuristic-section">
+    <h2 class="glow-text">Trilha Sonora do Sistema</h2>
+    <p>Escolha uma memória sonora:</p>
+    <div class="spotify-embeds">
+      <iframe src="https://open.spotify.com/embed/track/0SrDqCmn2ClzEzNkAZYc2Y" height="80" frameborder="0" allow="encrypted-media"></iframe>
+      <iframe src="https://open.spotify.com/embed/track/7BRD7x5pt8Lqa1eGYC4dzj" height="80" frameborder="0" allow="encrypted-media"></iframe>
+      <iframe src="https://open.spotify.com/embed/track/1x9hRVAYDB1XKBokDBboFe" height="80" frameborder="0" allow="encrypted-media"></iframe>
+      <iframe src="https://open.spotify.com/embed/track/0fXWmy6Yfoj2tsKecBToC7" height="80" frameborder="0" allow="encrypted-media"></iframe>
+      <iframe src="https://open.spotify.com/embed/track/7ETIZFr7163zFcz3RxKk5O" height="80" frameborder="0" allow="encrypted-media"></iframe>
+      <iframe src="https://open.spotify.com/embed/track/1fUZ5sHQqV6AMCwV5KtbgV" height="80" frameborder="0" allow="encrypted-media"></iframe>
+      <iframe src="https://open.spotify.com/embed/track/78SCmQ8A7KQSMdkem2SwBP" height="80" frameborder="0" allow="encrypted-media"></iframe>
+      <iframe src="https://open.spotify.com/embed/track/20wVJuUxI3tk2Y0OCuTDiq" height="80" frameborder="0" allow="encrypted-media"></iframe>
+      <iframe src="https://open.spotify.com/embed/track/7zBu9H2dIJSzBjfRkIiVNM" height="80" frameborder="0" allow="encrypted-media"></iframe>
+      <iframe src="https://open.spotify.com/embed/track/4JSROzfWqKccwZ68DX1aJe" height="80" frameborder="0" allow="encrypted-media"></iframe>
+    </div>
+  </section>
+
+  <audio id="type-sound" src="https://www.soundjay.com/keyboard/sounds/keyboard-1.mp3" preload="auto"></audio>
+  <script src="script.js"></script>
 </body>
 </html>
